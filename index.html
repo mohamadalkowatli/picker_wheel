@@ -15,11 +15,7 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
-  <script>
-    if (window.location.origin.includes("github.io")) {
-        window.location.href = window.location.href.replace("/index.html", "/");
-    }
-  </script>
+ 
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -39,5 +35,10 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+   <script>
+    if (window.location.origin.includes("github.io")) {
+        window.location.href = window.location.href.replace("/index.html", "/");
+    }
+  </script>
 </body>
 </html>
